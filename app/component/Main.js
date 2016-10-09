@@ -1,5 +1,6 @@
 const React = require('react');
-const Child = require('./Saved.js');
+const Saved = require('./Saved.js');
+const Search = require('./Search.js');
 const axios = require('axios');
 
 let Main = React.createClass({
@@ -12,4 +13,6 @@ let Main = React.createClass({
   handleSearch: function(){
     this.setState
   }
-})
+});
+
+module.exports = Main;
