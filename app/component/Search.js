@@ -26,9 +26,22 @@ const Search = React.createClass({
 
   },
 
+	setSearch: function(newSearch, newStart, newEnd){
+	this.setState({
+		searchTerm: newSearch,
+		startYear: newStart,
+		endYear: newEnd
+	})
+},
+
+
 	render: function(){
 
 		return(
+			<div className="main-container">
+				<Search updateSearch={this.setSearch} />
+				<Results results={this.state.results} />
+			</div>
 
 		)
 	}
