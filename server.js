@@ -1,9 +1,11 @@
+'use strict'
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
-const Article = require('./models/article.js');
+const Article = require('./models/articles.js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
